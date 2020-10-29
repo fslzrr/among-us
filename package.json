@@ -1,0 +1,41 @@
+{
+  "name": "among-us",
+  "version": "0.0.1",
+  "description": "Among Us 3D Scenes. Featuring the waiting room and some characters :)",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.+(js|jsx|ts|tsx)": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "among",
+    "us",
+    "3d",
+    "threejs"
+  ],
+  "author": "Fernando Salazar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/three": "^0.103.2",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "three": "^0.122.0"
+  }
+}
