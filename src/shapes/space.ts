@@ -31,8 +31,8 @@ function getRandomStarField(
   return texture;
 }
 
-const starsMap = getRandomStarField(1000, 2000, 2000);
-const spaceGeometry = new BoxGeometry(1000, 1000, 1000);
+const starsMap = getRandomStarField(1000, 3000, 3000);
+const spaceGeometry = new BoxGeometry(3000, 3000, 3000);
 const spaceMaterial = new MeshBasicMaterial({ map: starsMap, side: BackSide });
 const space = new Mesh(spaceGeometry, spaceMaterial);
 
