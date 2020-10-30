@@ -6,3 +6,4 @@ dist/
 
 # misc
 .cache/
+yarn-error.log
