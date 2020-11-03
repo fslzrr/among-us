@@ -1,6 +1,6 @@
 import { PointLight } from "three";
 
-const commonLight = new PointLight(0xffffff, 1, 500);
-commonLight.position.set(-100, 100, 100);
+const commonLight = new PointLight(0xffffff, 1, 2000);
+commonLight.position.set(-400, 400, 400);
 
 export default commonLight;
