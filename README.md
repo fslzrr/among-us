@@ -5,8 +5,6 @@ Here is a working live demo : https://fslzrr.github.io/among-us/
 
 ## Built with 
 
-- [WebGL](https://get.webgl.org/) - Cross-platform, royalty-free web standard for a low-level 3D graphics API based on OpenGL.
-
 - [ThreeJs](https://threejs.org/) - Cross-browser, JavaScript library and application programming interface (API) used to create and display animated 3D computer graphics in a web browser using WebGL.
 
 ## Development
