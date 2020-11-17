@@ -1,7 +1,7 @@
 import renderer from "./renderer";
 import scene from "./scene";
 import { ambientLight, commonLight } from "../lights";
-import { characters, space, party_hat, sun, sunlight } from "../shapes";
+import { characters, space, party_hat, sun } from "../shapes";
 
 import { PointLight } from "three";
 
