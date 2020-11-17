@@ -16,7 +16,7 @@ function getRandomStarField(
   ctx.fillRect(0, 0, width, height);
 
   for (let i = 0; i < numberOfStars; i += 1) {
-    const radius = Math.random() * 2;
+    const radius = Math.random() * 4;
     const x = Math.floor(Math.random() * width);
     const y = Math.floor(Math.random() * height);
 
