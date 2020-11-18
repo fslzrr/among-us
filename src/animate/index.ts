@@ -1,5 +1,5 @@
 import { camera, controls, renderer, scene } from "../core";
-import { characters, sun, party_hat } from "../shapes";
+import { characters, party_hat, sunlight } from "../shapes";
 
 async function animate() {
   requestAnimationFrame(animate);
@@ -26,6 +26,7 @@ async function animate() {
   teal.rotation.x += 0.001;
   teal.rotation.y -= 0.002;
 
+  const { sun, light } = sunlight;
   sun.rotation.y += 0.005;
 
   party_hat.rotation.x += 0.002;

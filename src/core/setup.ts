@@ -1,9 +1,7 @@
 import renderer from "./renderer";
 import scene from "./scene";
 import { ambientLight, commonLight } from "../lights";
-import { characters, space, party_hat, sun } from "../shapes";
-
-import { PointLight } from "three";
+import { characters, space, party_hat, sunlight } from "../shapes";
 
 async function setup() {
   document.body.appendChild(renderer.domElement);
@@ -53,14 +51,12 @@ async function setup() {
   party_hat.position.z = -10;
   scene.add(party_hat);
 
+  const { sun, light } = sunlight;
   sun.position.x = 300;
   sun.position.y = 80;
   sun.position.z = 90;
   scene.add(sun);
 
-  // Sunlight
-  const light = new PointLight(0xff4500, 2.5, 2000);
-  light.color.setHSL(0.08, 0.8, 0.5);
   light.position.set(300, 80, 90);
   scene.add(light);
 }
