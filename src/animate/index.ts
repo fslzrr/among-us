@@ -1,5 +1,5 @@
 import { camera, controls, renderer, scene } from "../core";
-import { characters } from "../shapes";
+import { characters, party_hat, sunlight } from "../shapes";
 
 async function animate() {
   requestAnimationFrame(animate);
@@ -18,13 +18,19 @@ async function animate() {
   orange.rotation.z += 0.005;
 
   purple.rotation.y -= 0.005;
-  purple.rotation.y += 0.001;
+  purple.rotation.z += 0.001;
 
   red.rotation.x += 0.002;
   red.rotation.y += 0.005;
 
   teal.rotation.x += 0.001;
   teal.rotation.y -= 0.002;
+
+  const { sun, light } = sunlight;
+  sun.rotation.y += 0.005;
+
+  party_hat.rotation.x += 0.002;
+  party_hat.rotation.z += 0.005;
 
   controls.update();
   renderer.render(scene, camera);
